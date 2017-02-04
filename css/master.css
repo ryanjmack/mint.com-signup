@@ -41,6 +41,7 @@ header ul {
 header a {
   color: inherit;
   text-decoration: none;
+  letter-spacing: 1px;
 }
 
 header li {
@@ -72,7 +73,6 @@ main section {
 section div {
   width: 100%;
   max-width: 400px;
-  display: flex;
 }
 
 section h1 {
@@ -84,19 +84,23 @@ section h1 {
 
 section label {
   display: block;
-  margin: 16px 0 11px;
+  margin: 20px 0 11px;
 }
 
 section form {
   width: 100%;
   max-width: 325px;
   padding-top: 1px;
+  font-size: 14px;
   color: black;
 }
 
 section input {
   width: 100%;
-  height: 32px;
+  height: 30px;
+  border: none;
+  border: 1px solid #CCC;
+  border-radius: 3px;
 }
 
 section span {
@@ -150,7 +154,13 @@ aside {
   padding: 20px 10px 40px;
 }
 
-aside h2 {font-weight: 400;font-size: 20px;height: 25px;text-align: center;margin-bottom: 0;}
+aside h2 {
+  font-weight: 400;
+  font-size: 20px;
+  height: 25px;
+  text-align: center;
+  margin-bottom: 0;
+}
 
 aside ul {
   padding-left: 20px;
@@ -161,6 +171,26 @@ aside ul {
 
 aside li {
   margin: 25px 5px;
+}
+
+footer {
+  margin: 30px 0;
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer a {
+  padding: 0 20px;
+  text-decoration: none;
+  margin-bottom: 30px;
+  border-right: 1px solid #999;
+  color: #353535;
+}
+
+footer a:last-child {
+  border-right: none;
 }
 
 @media screen and (max-width: 767px) {
