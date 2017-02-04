@@ -25,7 +25,9 @@
 
     <main>
       <section>
-        <h1>See all your finances in one place &amp; create a budget</h1>
+        <div>
+          <h1>See all your finances in one place &amp; create a budget</h1>
+        </div>
 
         <form action="#" method="post">
           <label for="email">Your email</label>
@@ -40,9 +42,9 @@
           <label for="confirm-password">Confirm Password</label>
           <input type="password" name="confirm-password">
 
-          <label>
-            <input type="checkbox" name="remember-me"> Remember me
-          </label>
+          <div id="checkbox">
+              <input type="checkbox" name="remember-me"><span> Remember me</span>
+          </div>
 
           <button type="button" name="submit-button"><i class="fa fa-lock" aria-hidden="true"></i> Sign up</button>
         </form>
